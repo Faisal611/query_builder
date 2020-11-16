@@ -14,10 +14,15 @@ class CustomarsController extends Controller
     public function customer(){
         $data=[
             'name'=>'faisal',
-            'email'=>'faisal@gmail.com',
+            'email'=>'fisal@gmail.com',
             'votes'=>'150'
         ];
         DB::table('customars')->insert($data);
-        return 'insert data successful';
+        return 'customer create successful';
+    }
+    public function allCustomer(){
+       $allCustomer= DB::table('customars')->get();
+//       return $allCustomer;
+        dd($allCustomer);
     }
 }

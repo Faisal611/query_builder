@@ -16,7 +16,7 @@ class CreateCustomarsTable extends Migration
         Schema::create('customars', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email');
+            $table->string('email',150)->unique();
             $table->integer('votes');
             $table->timestamps();
         });
