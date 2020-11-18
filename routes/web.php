@@ -21,3 +21,4 @@ Route::get('create', 'CustomarsController@index');
 
 Route::get('customer_table','CustomarsController@customer');
 Route::get('all_customer', 'CustomarsController@allCustomer');
+Route::get('customerId', 'CustomarsController@customerId');
